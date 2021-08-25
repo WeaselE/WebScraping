@@ -41,3 +41,4 @@ for job_element in python_job_elements:
     print(location_element.text.strip())
     print(links)
     print()
+    
