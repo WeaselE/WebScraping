@@ -27,7 +27,7 @@ for job_element in job_elements:
 # with open('MainPage.html', 'w') as fl:
 #     fl.write(r.text)
 
-python_jobs = results.find_all('h2', string=(lambda text:'python' in text.lower()) and (lambda text:'entry' in text.lower()))
+python_jobs = results.find_all('h2', string=lambda text:'engineer' in text.lower())
 
 python_job_elements = [h2_elements.parent.parent.parent for h2_elements in python_jobs]
 
